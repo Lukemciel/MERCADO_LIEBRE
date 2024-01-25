@@ -1,7 +1,3 @@
-main {
-    margin: 0;
-}
-
 .register-form {
     display: flex;
     flex-direction: column;
@@ -13,7 +9,7 @@ main {
     width: 80%;
     height: 40px;
     padding: 12px;
-    margin: 10px;
+    margin: 10px 0px;
     border-radius: 8px;
 }
 
@@ -26,19 +22,46 @@ main {
 
 .fdn input {
     width: 100%;
-    margin: 0;
+    margin-top: 0.5em;
 }
 
 .perfilDeUsuario {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    align-items: start;
+    width: 80%;
+    margin: 10px 0px;
 }
 
 .perfilDeUsuario div {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 40px;
+    justify-content: space-between;
+}
+
+.perfilDeUsuario div div {
+    height: 30px;
+    margin-right: 20%;
+}
+
+.perfilDeUsuario div div input {
+    margin-right: 1em;
+}
+
+.intereses {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.intereses div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.intereses div input {
+    width: 1em;
+    height: 1em;
+    margin-right: 1em;
 }
