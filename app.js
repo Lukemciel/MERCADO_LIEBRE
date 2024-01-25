@@ -11,3 +11,6 @@ app.listen(8000, ()=>{
 app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/home.html'))
 })
+ app.get('/registro', (req,  res) => {
+    res.sendFile(path.join(__dirname, '/views/register.html'))
+ })
