@@ -21,7 +21,7 @@ header {
     align-items: center;
 }
 
-.header-top {
+.header-top-top {
     display: flex;
     padding: 15px;
     height: 80px;
@@ -54,7 +54,9 @@ header {
 }
 
 .listas {
+    display: none;
 }
+
 .listas a {
     text-decoration: none;
 }
@@ -93,15 +95,17 @@ main {
 }
 
 .productos {
+    width: 90vw;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
 }
- .productos h2 {
+
+.productos h2 {
     color: #666;
     margin: 10px 0px;
- }
+}
 
 .productos article {
     margin-bottom: 10px;
@@ -117,25 +121,28 @@ main {
     padding: 15px;
     box-sizing: border-box;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .desc-product i {
     display: block;
-    font-size: 16px; 
-    padding: 5px; 
-    width: 30px; 
-    height: 30px; 
-    border: 1px solid #39b54a; 
-    background-color: #FFF; 
-    border-radius: 50%; 
-    position: absolute; 
-    right: 20px; 
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
     top: -15px;
     color: #39b54a;
 }
 
 .off {
-    color:#39b54a;
+    color: #39b54a;
+    width: 50%;
 }
 
 main h4 {
@@ -144,6 +151,7 @@ main h4 {
 
 .precio {
     font-size: 18px;
+    width: 50%;
 }
 
 footer {
@@ -183,13 +191,121 @@ footer .cr {
 
 @media (min-width: 361px) {
 
-.productos article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-top-top {
+        display: flex;
+        padding: 15px;
+        height: 80px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo {
+        width: none;
+    }
+
+    .search-bar {
+
+        width: none;
+    }
+
+    .listas {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .listas ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        width: 40vw;
+        margin: 10px;
+        max-width: 280px;
+    }
+
+    .listas li {
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .productos {
+        display: flex;  
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .productos h2 {
+        width: 100%;
+    }
+
+    .productos article {
+        width: 47.5%;
+    }
+
+    .productos article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }
 
 @media (min-width: 769px) {
-.productos article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
+
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header-top-top {
+        display: flex;
+        padding: 15px;
+        height: 80px;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo {
+        width: none;
+        max-height: 80px;
+    }
+
+    .search-bar {
+
+        width: none;
+    }
+
+    .listas {
+        display: flex
+    }
+
+    .productos {
+        display: flex;  
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .productos h2 {
+        width: 100%;
+    }
+
+    .productos article {
+        width: 21vw;
+    }
+
+    .productos article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }
