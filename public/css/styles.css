@@ -53,8 +53,6 @@ header {
     border: none;
 }
 
-.listas {
-}
 .listas a {
     text-decoration: none;
 }
@@ -97,6 +95,7 @@ main {
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    width: 90%;
 }
  .productos h2 {
     color: #666;
@@ -132,6 +131,11 @@ main {
     right: 20px; 
     top: -15px;
     color: #39b54a;
+    transition: transform 0.3s ease-in-out ;
+}
+
+.desc-product i:hover {
+    transform: rotate(-90deg);
 }
 
 .off {
