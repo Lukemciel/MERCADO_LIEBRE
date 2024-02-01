@@ -259,7 +259,7 @@ footer .cr {
         width: 47.5%;
     }
 
-    .productos article {
+    .productos article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
@@ -309,9 +309,31 @@ footer .cr {
 
     .productos article {
         width: 21vw;
+        margin-bottom: 30px; 
     }
 
-    .productos article {
+    .productos article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
+    .product-name {
+        display: none;
+    }
+
+    .productos article:hover .product-name {
+        display: flex;
+    }
+
+
+    footer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 30pxq;
+    }
+
+    footer .cr {
+        width: 100%;
+    }
+
 }
