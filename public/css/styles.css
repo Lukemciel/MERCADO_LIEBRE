@@ -277,19 +277,22 @@ footer .cr {
         display: flex;
         padding: 15px;
         height: 80px;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
     }
 
     .logo {
-        width: none;
+        width: 30%;
         max-height: 80px;
     }
 
     .search-bar {
+        width: 30%;
+    }
 
-        width: none;
+    .header-top-top p {
+        width: 30%;
     }
 
     .listas {
