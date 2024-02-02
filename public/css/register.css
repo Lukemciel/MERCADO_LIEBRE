@@ -79,7 +79,7 @@
 .buttons button {
     height: 30px;
     width: 35%;
-    color: black;
-    background-color: #ffffff;
+    color: #fefefe;
+    background-color: #1259c3;
     border-radius: 5px;
 }
